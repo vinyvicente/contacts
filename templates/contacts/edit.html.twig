@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Contact{% endblock %}
+
+{% block body %}
+    <h1>Update contact</h1>
+
+    {{ include('contacts/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('contacts') }}">back to list</a>
+{% endblock %}
